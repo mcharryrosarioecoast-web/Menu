@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Navigation Menus</title>
+<link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+<!-- ------------------ HORIZONTAL MENU ------------------ -->
+<div class="horizontal-section">
+  <h2 style="padding:10px;">Horizontal Navigation</h2>
+  <div class="nav-horizontal">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<!-- ------------------ VERTICAL MENU ------------------ -->
+<div class="vertical-section">
+  <div class="nav-vertical">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <p>This is the content beside the vertical navigation.</p>
+</div>
+
+<!-- ------------------ BURGER MENU ------------------ -->
+<div class="burger-section">
+  <h2 style="padding:10px;">Burger Menu (Responsive)</h2>
+
+  <div class="nav-burger" id="myNav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
+  </div>
+</div>
+
+<script>
+function toggleMenu() {
+  var x = document.getElementById("myNav");
+  if (x.className === "nav-burger") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav-burger";
+  }
+}
+</script>
+
+</body>
+</html>
